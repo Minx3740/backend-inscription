@@ -1,5 +1,4 @@
 import { google } from 'googleapis';
-import { readFile } from 'fs/promises';
 
 const SPREADSHEET_ID = '1fHfzEpyee_2fZL-g_-lO4AD6IKMZ8OU1V6JoIKf7B38'; // À remplacer par l'ID de ton Google Sheet
 const SHEET_NAME = 'Feuille 1'; // À adapter si besoin
