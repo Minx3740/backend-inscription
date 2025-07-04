@@ -5,7 +5,7 @@ const SPREADSHEET_ID = '1fHfzEpyee_2fZL-g_-lO4AD6IKMZ8OU1V6JoIKf7B38'; // À rem
 const SHEET_NAME = 'Feuille 1'; // À adapter si besoin
 
 async function getAuth() {
-  const credentials = JSON.parse(await readFile('./credentials.json', 'utf8'));
+    const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
   const scopes = ['https://www.googleapis.com/auth/spreadsheets'];
   const auth = new google.auth.GoogleAuth({
     credentials,
